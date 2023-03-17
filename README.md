@@ -10,7 +10,7 @@ These sets contain 33,920 and 5,826 chest X-ray respectively.
 ![U-net architecture](https://github.com/zhixuhao/unet/blob/master/img/u-net-architecture.png)
 
 For this project I used pretrained [U-Net architecture](https://github.com/milesial/Pytorch-UNet) implemented using PyTorch.
-The last layer of the network was updated to output a single value with added Sigmoid activation function to make sure, that mask pixels are in [0, 1] range.
+The last layer of the network was updated to output a single-channel image with added Sigmoid activation function to make sure, that mask pixels are in [0, 1] range.
 
 ### Training
 Before training model was first pretrained on a lung segmentation task so that it would already be good at recognizing general patterns in chest X-Rays.
