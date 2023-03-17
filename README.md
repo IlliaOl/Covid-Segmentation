@@ -15,7 +15,7 @@ The last layer of the network was updated to output a single-channel image with 
 ### Training
 Before training model was first pretrained on a lung segmentation task so that it would already be good at recognizing general patterns in chest X-Rays.
 
-Lung and covid segmentation models were trained for 2 and 4 epoch respectively.
+Lung and covid segmentation models were trained for 2 and 4 epochs respectively.
 
 Training and evaluation was done using DiceLoss function with additional IoU and PA metrics also being computed.
 
