@@ -69,7 +69,3 @@ class ONNX:
     masked_image = torchvision.utils.draw_segmentation_masks(img, (mask > 0.9), colors=['red'])
 
     plt.imshow(masked_image.permute(1,2,0))
-
-lung_onnx = ONNX('/content/lung_seg_onnx.onnx')
-
-lung_onnx.run_show_image('/content/332aa0c67cb2e035e372c7cb3ceca2_jumbo.jpg')
